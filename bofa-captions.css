@@ -2,7 +2,15 @@
   bottom: 35px !important;
 }
 
-.playkit-subtitles div[style] {
+/* Reset any outer player subtitle containers so they never draw borders or shadows */
+.playkit-subtitles div {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Target strictly the innermost caption text box */
+.playkit-subtitles > div > div > div {
+  display: inline-block !important;
   border-radius: 6px !important;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.55) !important;
 }
