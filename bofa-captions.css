@@ -10,7 +10,8 @@
 
 /* Target strictly the innermost caption text box */
 .playkit-subtitles > div > div > div {
-  display: inline-block !important;
   border-radius: 6px !important;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.55) !important;
+  -webkit-box-decoration-break: clone !important;
+  box-decoration-break: clone !important;
 }
